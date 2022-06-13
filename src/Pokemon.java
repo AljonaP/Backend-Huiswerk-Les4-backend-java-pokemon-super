@@ -4,13 +4,13 @@ public abstract class Pokemon {
     private int level;
     private String type;
 
-    //contrustor
+
     public Pokemon (String name, int level){
         this.name = name;
         this.level = level;
     }
 
-    //setters
+
     public void setName(String name) {
         this.name = name;
     }
@@ -23,7 +23,7 @@ public abstract class Pokemon {
         this.type = type;
     }
 
-    //getters
+
     public String getName() {
         return name;
     }
@@ -38,10 +38,10 @@ public abstract class Pokemon {
 
 
     public void speaks(){
-        System.out.println("Pokemon can speak");
+        System.out.println(this.getName() + " can speak");
     }
 
     public void eats(){
-        System.out.println("Every Pokemon doesn't mind to eat from time to time");
+        System.out.println(this.getName() + " doesn't mind to eat from time to time");
     }
 }

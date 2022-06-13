@@ -7,6 +7,18 @@ public class GrassPokemon extends Pokemon {
     }
 
     public void rainDance() {
-        System.out.println("Pokemon dances only while raining :)");
+        System.out.println(this.getName() + " dances only while raining :)");
+    }
+
+    @Override
+    public void speaks() {
+        System.out.println(this.getName() + " does speak English");
+    }
+
+    @Override
+    public void eats() {
+        System.out.println(this.getName() + " eats apples and cucumbers");
     }
 }
+
+

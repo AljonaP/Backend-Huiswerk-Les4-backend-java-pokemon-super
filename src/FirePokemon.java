@@ -8,6 +8,16 @@ public class FirePokemon extends Pokemon {
     }
 
     public void flamethrower() {
-        System.out.println("Pokemon throws flame");
+        System.out.println(this.getName() + " throws flame");
+    }
+
+    @Override
+    public void speaks() {
+        System.out.println(this.getName() + " can't speak at all");
+    }
+
+    @Override
+    public void eats() {
+        System.out.println(this.getName() + " love to eat well done meat");
     }
 }
